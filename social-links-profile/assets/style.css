@@ -1,0 +1,90 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* General */
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-gray: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--off-black);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+
+.card-container{
+    background-color: var(--dark-gray);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.avatar-image img{
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.avatar-info h1{
+    color: var(--white);
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.avatar-info p{
+    color: var(--green);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.avatar-role{
+    color: var(--white);
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--grey);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: ease 0.7s;
+}
+
+.link:hover{
+    color: var(--dark-gray);
+    background-color: var(--green);
+}
